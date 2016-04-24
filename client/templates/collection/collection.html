@@ -1,0 +1,25 @@
+<template name="Collection">
+    {{#SlideFormat title='Collections'}}
+        {{#SlideParagraph}}
+            To store persistent data, we need to <span class="highlight">save it in a database</span>.
+        {{/SlideParagraph}}
+        {{#SlideParagraph}}
+            Meteor uses <span class="highlight">MongoDB</span> by default.
+        {{/SlideParagraph}}
+        {{#SlideParagraph}}
+            <span class="highlight">Collections</span> are Meteor's way of storing persistent data.
+        {{/SlideParagraph}}
+        {{#SlideParagraph}}
+            We need to define collections in the <span class="code">imports/</span> folder. It's not necessary, but since it's a module and Meteor has a way for handling modules, it's better to keep it there.
+        {{/SlideParagraph}}
+        {{#SlideParagraph}}
+            After defining our collection, we need to <span class="highlight">import it in a server file</span>. This creates the MongoDB collection and sets up the plumbing to get the data to the client.
+        {{/SlideParagraph}}
+        {{#SlideParagraph}}
+            Back to our client code, we again import the collection. And voila! Our collection is ready to be used!
+        {{/SlideParagraph}}
+        {{#SlideParagraph}}
+            Items inside our collection are called <span class="highlight">documents</span>. These documents are JSON-like, meaning they can have different attributes.
+        {{/SlideParagraph}}
+    {{/SlideFormat}}
+</template>

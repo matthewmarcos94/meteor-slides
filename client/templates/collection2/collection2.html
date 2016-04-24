@@ -1,0 +1,25 @@
+<template name="Collection2">
+    {{#SlideFormat title='Collections'}}
+        {{#SlideParagraph}}
+            <span class="code">Collection.insert(object)</span> is used for inserting documents.
+        {{/SlideParagraph}}
+        {{#SlideParagraph}}
+            <span class="code">Collection.find(query, filter)</span> is used for finding documents. It returns a <span class="highlight">cursor</span>.
+        {{/SlideParagraph}}
+        {{#SlideParagraph}}
+            <span class="code">Collection.findOne(query, filter)</span> is used for finding a single document. It returns an <span class="highlight">object</span>.
+        {{/SlideParagraph}}
+        {{#SlideParagraph}}
+            <span class="code">Collection.update(query, modification)</span> is used for updating documents.
+        {{/SlideParagraph}}
+        {{#SlideParagraph}}
+            <span class="code">Collection.remove(query)</span> is used for removing documents.
+        {{/SlideParagraph}}
+        {{#SlideParagraph}}
+            We can also access our database directly. To do so, open up a new terminal, go to your project's directory, and type <span class="code">meteor mongo</span>. 
+        {{/SlideParagraph}}
+        {{#SlideParagraph}}
+            But instead of using <span class="code">Collection.action(parameter)</span>, we use <span class="code">db.Collection.action(parameter)</span> here. 
+        {{/SlideParagraph}}
+    {{/SlideFormat}}
+</template>

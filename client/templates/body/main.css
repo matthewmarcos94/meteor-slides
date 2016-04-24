@@ -1,0 +1,16 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    font-family: Helvetica, Arial, sans-serif; 
+}
+
+.highlight {
+    color: #DE4F4F;
+}
+
+.code {
+    background: #515151;
+    font-family: monospace;
+    padding: 0.2em 0.5em;
+    border-radius: 3px;
+}
