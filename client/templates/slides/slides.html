@@ -1,79 +1,20 @@
 <template name="Slides">
     <div id="slides-particles"></div>
     <div class="slides-full-page">
+        {{#if chepar}}
+            Slide: {{index}}
+        {{/if}}
         {{#if equal index 0}}
-            {{> Introduction}}
+            <!-- {{> Introduction}} -->
+            {{> Intro}}
         {{/if}}
         {{#if equal index 1}}
-            {{> WhatIsMeteor}}
+            {{> WhatAreAccounts}}
         {{/if}}
         {{#if equal index 2}}
-            {{> WhatIsMeteor2}}
+            {{> HowToAddAccounts}}
         {{/if}}
-        {{#if equal index 3}}
-            {{> WhyUseMeteor}}
-        {{/if}}
-        {{#if equal index 4}}
-            {{> WhyUseMeteor2}}
-        {{/if}}
-        {{#if equal index 5}}
-            {{> Amazing}}
-        {{/if}}
-        {{#if equal index 6}}
-            {{> Creating}}
-        {{/if}}
-        {{#if equal index 7}}
-            {{> Creating2}}
-        {{/if}}
-        {{#if equal index 8}}
-            {{> ServerClient}}
-        {{/if}}
-        {{#if equal index 9}}
-            {{> ServerClient2}}
-        {{/if}}
-        {{#if equal index 10}}
-            {{> ServerClient3}}
-        {{/if}}
-        {{#if equal index 11}}
-            {{> HTMLFile}}
-        {{/if}}
-        {{#if equal index 12}}
-            {{> HTMLFile2}}
-        {{/if}}
-        {{#if equal index 13}}
-            {{> HTMLFile3}}
-        {{/if}}
-        {{#if equal index 14}}
-            {{> HTMLFile4}}
-        {{/if}}
-        {{#if equal index 15}}
-            {{> CSSFile}}
-        {{/if}}
-        {{#if equal index 16}}
-            {{> JSFile}}
-        {{/if}}
-        {{#if equal index 17}}
-            {{> JSFile2}}
-        {{/if}}
-        {{#if equal index 18}}
-            {{> JSFile3}}
-        {{/if}}
-        {{#if equal index 19}}
-            {{> Exercise}}
-        {{/if}}
-        {{#if equal index 20}}
-            {{> Problem}}
-        {{/if}}
-        {{#if equal index 21}}
-            {{> Collection}}
-        {{/if}}
-        {{#if equal index 22}}
-            {{> Collection2}}
-        {{/if}}
-        {{#if equal index 23}}
-            {{> Exercise2}}
-        {{/if}}
-        {{#if equal index 24}}
+                {{#if equal index 24}}
             {{> Outro}}
         {{/if}}
     </div>

@@ -16,8 +16,13 @@ Template.Slides.helpers({
         }
         else return 0;
     },
+
     'equal'(x, y) {
         return x === y;
+    },
+
+    'chepar'() {
+        return window.location.pathname === '/chepar';
     }
 });
 
@@ -36,7 +41,7 @@ Template.Slides.onRendered(function () {
             }
         }
     });
-    
+
     //particles
     particlesJS('slides-particles', {
         particles: {
@@ -66,6 +71,6 @@ Template.Slides.onRendered(function () {
         /* Retina Display Support */
         retina_detect: true
     });
-    
+
     $('#slides-particles').css('position', 'absolute');
 });
